@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Submitted Information</h1>
+      <div class="row">
+        <div class="col">
+          Name:
+        </div>
+        <div class="col">
+          <%= formData.name %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Dojo Location:
+        </div>
+        <div class="col">
+          <%= formData.location %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Language
+        </div>
+        <div class="col">
+          <%= formData.language %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Comment:
+        </div>
+        <div class="col">
+          <%= formData.comment %>
+        </div>
+      </div>
+
+      <form action="/" method="post">
+        <button class="btn btn-primary" type="submit" name="button">Back</button>
+      </form>
+
+    </div>
+  </body>
+</html>
